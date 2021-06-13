@@ -1,0 +1,10 @@
+<h2>one way binding and two way binding</h2>
+
+
+<!-- <input type="text" value="{{count}}"> -->
+<input type="text" [(ngModel)]="count">
+
+<button (click)="PassTo2ndTextBox()"> click me {{count}}</button>
+
+<input type="text" value="{{count2}}">
+
