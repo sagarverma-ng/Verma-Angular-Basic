@@ -1,0 +1,7 @@
+<p>parent works!</p>
+
+<input type="text" [(ngModel)]="name">
+<button (click)="PassValueToChild()">Pass value to child</button>
+
+
+<app-child [compingFromParent]="passNameValueToChild" (passToParentValue)="CallComingfromChild($event)"></app-child>
