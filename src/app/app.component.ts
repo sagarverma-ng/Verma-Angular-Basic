@@ -30,7 +30,6 @@ export class AppComponent {
     const two = { id: 2, name: 'two', address: 'Banglore' };
     this.ProductArray.push(two);
     for (let i = 1; i <= 10; i++) {
-
       this.ProductArray.push({ id: 3 + i, name: 'two_' + i, address: 'Banglore_' + i });
     }
   }

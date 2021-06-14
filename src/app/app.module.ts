@@ -8,6 +8,7 @@ import { TeacherComponent } from './teacher/teacher.component';
 import { FormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ReversePipePipe } from './Shared/reverse-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ChildComponent } from './child/child.component';
     TeacherComponent,
     ParentComponent,
     ChildComponent,
+    ReversePipePipe,
   ],
   imports: [
     BrowserModule,
