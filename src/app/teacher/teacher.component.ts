@@ -9,7 +9,9 @@ export class TeacherComponent {
   count = 10;
   count2 = 0;
 
-  
+  readonly: boolean = false;
+  color = 'red';
+
   PassTo2ndTextBox() {
 
     this.count2 = Number(this.count) + 1;

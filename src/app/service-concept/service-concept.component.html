@@ -1,0 +1,35 @@
+<h3>Single Object</h3>
+
+<table *ngIf="SingleObj">
+    <tr>
+        <td>id</td>
+        <td><input type="text" value="{{SingleObj.Id}}"></td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><input type="text" value="{{SingleObj.Name}}"></td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td><input type="text" value="{{SingleObj.Address}}"></td>
+    </tr>
+</table>
+
+-------------------------------------------------
+<h3>Multiple Object</h3> <button (click)="GetAllProduct()">Get All Products</button>
+
+<table *ngIf="MultipleObj">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+    </thead>
+    <tr *ngFor="let item of MultipleObj">
+        <td><input type="text" value="{{item.Id}}"></td>
+        <td><input type="text" value="{{item.Name}}"></td>
+        <td><input type="text" value="{{item.Address}}"></td>
+    </tr>
+  </table>
+
+
+

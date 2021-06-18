@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ReversePipePipe } from './Shared/reverse-pipe.pipe';
+import { ServiceConceptComponent } from './service-concept/service-concept.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ReversePipePipe } from './Shared/reverse-pipe.pipe';
     ParentComponent,
     ChildComponent,
     ReversePipePipe,
+    ServiceConceptComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
