@@ -16,7 +16,7 @@ export class ProductServiceService {
   }
 
   callMultipleProduct(): Observable<Product[]> {
-    return this.http.get<Product[]>('assets/All-Product.json')
+     return this.http.get<Product[]>('assets/All-Product.json');
   }
 }
 

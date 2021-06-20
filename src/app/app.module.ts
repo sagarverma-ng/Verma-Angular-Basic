@@ -11,6 +11,7 @@ import { ChildComponent } from './child/child.component';
 import { ReversePipePipe } from './Shared/reverse-pipe.pipe';
 import { ServiceConceptComponent } from './service-concept/service-concept.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceOperationComponent } from './service-operation/service-operation.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     ChildComponent,
     ReversePipePipe,
     ServiceConceptComponent,
+    ServiceOperationComponent,
   ],
   imports: [
     BrowserModule,
