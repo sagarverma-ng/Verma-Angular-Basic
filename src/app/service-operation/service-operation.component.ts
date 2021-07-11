@@ -37,13 +37,36 @@ export class ServiceOperationComponent implements OnInit {
   }
 
   Insert(): void {
-
+    debugger
+    this.service.Insert().subscribe(res => {
+      debugger
+    }, error => {
+      debugger
+    }, () => {
+      debugger
+    });
   }
-  Update(): void {
 
+  Update(): void {
+    debugger
+    this.service.Update(21).subscribe(res => {
+      debugger
+    }, error => {
+      debugger
+    }, () => {
+      debugger
+    });
   }
 
   Delete(): void {
-
+    debugger
+    this.service.Delete(10).subscribe(res => {
+      debugger
+    }, error => {
+      debugger
+    }, () => {
+      debugger
+    });
   }
+
 }

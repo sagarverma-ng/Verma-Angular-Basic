@@ -14,8 +14,17 @@ export class ServiceConceptComponent implements OnInit {
   constructor(private service: ProductServiceService) { }
 
   ngOnInit(): void {
+    debugger
     this.service.callSingleProduct().subscribe(res => {
+      debugger
+      // here it will come if sucess
       this.SingleObj = res;
+    }, error => {
+      // here it will come if error
+      debugger
+    }, () => {
+      debugger
+      // here it will come if after sucess
     });
 
   }
